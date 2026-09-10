@@ -1,0 +1,37 @@
+/* AGROFORTE DESIGN TOKENS */
+
+:root {
+  /* Brand Core Colors */
+  --agro-green: #5E8F0B;
+  --agro-dark: #1D300E;
+  --agro-forest: #294A0D;
+  --agro-lime: #8DBB18;
+  --agro-cream: #F9F8F4;
+  --agro-white: #FFFFFF;
+  --agro-text-secondary: #555A50;
+  --agro-border: #E5E5DC;
+
+  /* Category Accents */
+  --agro-tech: #403568;
+  --agro-soil: #654316;
+
+  /* Gradients */
+  --gradient-green-glow: linear-gradient(135deg, #8DBB18 0%, #5E8F0B 45%, #294A0D 100%);
+  --gradient-dark-agro: linear-gradient(135deg, #294A0D 0%, #1D300E 100%);
+  --gradient-natural-bg: radial-gradient(circle at 70% 30%, rgba(141, 187, 24, 0.12), transparent 45%);
+  --gradient-hero-overlay: linear-gradient(to right, rgba(29, 48, 14, 0.96) 0%, rgba(29, 48, 14, 0.82) 50%, rgba(29, 48, 14, 0.4) 100%);
+
+  /* Shadows */
+  --shadow-card-normal: 0 8px 24px rgba(29, 48, 14, 0.08);
+  --shadow-card-hover: 0 14px 32px rgba(29, 48, 14, 0.14);
+  --shadow-glow-lime: 0 0 28px rgba(141, 187, 24, 0.22);
+  --shadow-glow-green: 0 0 32px rgba(94, 143, 11, 0.25);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-card: 16px;
+  --radius-pill: 9999px;
+}
