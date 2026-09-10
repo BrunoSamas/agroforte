@@ -69,7 +69,7 @@ export function AgroHeader({ onOpenContact }: AgroHeaderProps) {
         className={cn(
           "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
           isScrolled
-            ? "bg-[#1D300E]/92 backdrop-blur-md border-b border-[#294A0D]/60 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3.5"
+            ? "bg-[#1d2908]/92 backdrop-blur-md border-b border-[#3c5310]/60 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3.5"
             : "bg-transparent py-5 sm:py-6"
         )}
       >
@@ -79,7 +79,7 @@ export function AgroHeader({ onOpenContact }: AgroHeaderProps) {
 
           {/* Desktop Navigation Links */}
           <nav
-            className="hidden md:flex items-center gap-1 lg:gap-2 px-4 py-1.5 rounded-full bg-[#1D300E]/40 backdrop-blur-sm border border-white/10"
+            className="hidden md:flex items-center gap-1 lg:gap-2 px-4 py-1.5 rounded-full bg-[#1d2908]/40 backdrop-blur-sm border border-white/10"
             aria-label="Navegação Principal"
           >
             {navLinks.map((link) => {
@@ -92,7 +92,7 @@ export function AgroHeader({ onOpenContact }: AgroHeaderProps) {
                   className={cn(
                     "px-4 py-1.5 text-xs lg:text-sm font-montserrat font-semibold tracking-wider rounded-full transition-all duration-200",
                     isActive
-                      ? "text-white bg-[#5E8F0B]/50 shadow-sm"
+                      ? "text-white bg-[#527316]/50 shadow-sm"
                       : "text-white/80 hover:text-white hover:bg-white/10"
                   )}
                 >
@@ -121,11 +121,11 @@ export function AgroHeader({ onOpenContact }: AgroHeaderProps) {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-white bg-white/10 hover:bg-white/20 border border-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#8DBB18]"
+            className="md:hidden p-2 rounded-lg text-white bg-white/10 hover:bg-white/20 border border-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#84dc00]"
             aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6 text-[#8DBB18]" /> : <Menu className="w-6 h-6 text-white" />}
+            {mobileMenuOpen ? <X className="w-6 h-6 text-[#84dc00]" /> : <Menu className="w-6 h-6 text-white" />}
           </button>
         </div>
       </header>
@@ -141,7 +141,7 @@ export function AgroHeader({ onOpenContact }: AgroHeaderProps) {
       >
         <div
           className={cn(
-            "fixed top-0 right-0 w-[82%] max-w-sm h-full bg-[#1D300E] border-l border-[#294A0D] p-6 flex flex-col justify-between shadow-2xl transition-transform duration-300 ease-out",
+            "fixed top-0 right-0 w-[82%] max-w-sm h-full bg-[#1d2908] border-l border-[#3c5310] p-6 flex flex-col justify-between shadow-2xl transition-transform duration-300 ease-out",
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
           )}
           onClick={(e) => e.stopPropagation()}
@@ -164,7 +164,7 @@ export function AgroHeader({ onOpenContact }: AgroHeaderProps) {
                   key={link.id}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="px-4 py-3 rounded-xl text-base font-montserrat font-semibold text-white/90 hover:text-[#8DBB18] hover:bg-white/05 transition-colors flex items-center justify-between"
+                  className="px-4 py-3 rounded-xl text-base font-montserrat font-semibold text-white/90 hover:text-[#84dc00] hover:bg-white/05 transition-colors flex items-center justify-between"
                 >
                   <span>{link.label}</span>
                   <ArrowUpRight className="w-4 h-4 opacity-50" />

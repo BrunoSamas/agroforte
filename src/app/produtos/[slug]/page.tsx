@@ -57,22 +57,22 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F9F8F4] text-[#1D300E]">
+    <div className="min-h-screen flex flex-col bg-[#F9F8F4] text-[#1d2908]">
       <AgroHeader />
 
       <main className="flex-1 pt-28 pb-20">
         <AgroContainer>
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-xs font-montserrat font-semibold text-[#555A50] pb-8">
-            <Link href="/" className="hover:text-[#5E8F0B]">
+            <Link href="/" className="hover:text-[#527316]">
               Início
             </Link>
             <span>/</span>
-            <Link href="/produtos" className="hover:text-[#5E8F0B]">
+            <Link href="/produtos" className="hover:text-[#527316]">
               Produtos
             </Link>
             <span>/</span>
-            <span className="text-[#1D300E] font-bold">{product.name}</span>
+            <span className="text-[#1d2908] font-bold">{product.name}</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -90,7 +90,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
 
               <div className="mt-4 p-4 rounded-2xl bg-white border border-[#E5E5DC] flex items-center gap-3">
-                <ShieldCheck className="w-5 h-5 text-[#5E8F0B] shrink-0" />
+                <ShieldCheck className="w-5 h-5 text-[#527316] shrink-0" />
                 <span className="text-xs text-[#555A50]">
                   Garantia de pureza e controle de lote auditado pela Agroforte.
                 </span>
@@ -104,13 +104,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   {product.categoryLabel}
                 </AgroBadge>
                 {product.badge && (
-                  <span className="text-xs font-montserrat font-bold text-[#5E8F0B]">
+                  <span className="text-xs font-montserrat font-bold text-[#527316]">
                     {product.badge}
                   </span>
                 )}
               </div>
 
-              <h1 className="text-3xl sm:text-4xl font-montserrat font-black text-[#1D300E] uppercase">
+              <h1 className="text-3xl sm:text-4xl font-montserrat font-black text-[#1d2908] uppercase">
                 {product.name}
               </h1>
 
@@ -120,15 +120,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
               {/* Technical Specifications Sheet */}
               <div className="flex flex-col gap-3 p-5 rounded-2xl bg-[#F9F8F4] border border-[#E5E5DC] text-xs sm:text-sm">
-                <h3 className="font-montserrat font-bold text-[#1D300E] uppercase tracking-wider text-xs pb-1 border-b border-[#E5E5DC]">
+                <h3 className="font-montserrat font-bold text-[#1d2908] uppercase tracking-wider text-xs pb-1 border-b border-[#E5E5DC]">
                   Ficha Técnica Agronômica
                 </h3>
 
                 {product.composition && (
                   <div className="flex items-start gap-3 pt-2">
-                    <FlaskConical className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                    <FlaskConical className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#1D300E] block">Composição Química:</strong>
+                      <strong className="text-[#1d2908] block">Composição Química:</strong>
                       <span className="text-[#555A50]">{product.composition}</span>
                     </div>
                   </div>
@@ -136,9 +136,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
                 {product.dosage && (
                   <div className="flex items-start gap-3">
-                    <Compass className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                    <Compass className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#1D300E] block">Dosagem Recomendada:</strong>
+                      <strong className="text-[#1d2908] block">Dosagem Recomendada:</strong>
                       <span className="text-[#555A50]">{product.dosage}</span>
                     </div>
                   </div>
@@ -146,9 +146,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
                 {product.application && (
                   <div className="flex items-start gap-3">
-                    <Layers className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                    <Layers className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#1D300E] block">Método de Aplicação:</strong>
+                      <strong className="text-[#1d2908] block">Método de Aplicação:</strong>
                       <span className="text-[#555A50]">{product.application}</span>
                     </div>
                   </div>
@@ -157,13 +157,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
               {/* Key Features */}
               <div className="flex flex-col gap-2">
-                <h3 className="font-montserrat font-bold text-xs uppercase tracking-wider text-[#1D300E]">
+                <h3 className="font-montserrat font-bold text-xs uppercase tracking-wider text-[#1d2908]">
                   Benefícios Comprovados:
                 </h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {product.features.map((feat, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-xs text-[#555A50]">
-                      <CheckCircle2 className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                       <span>{feat}</span>
                     </li>
                   ))}

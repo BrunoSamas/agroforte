@@ -38,14 +38,14 @@ export function AgroFooter() {
   ];
 
   return (
-    <footer className="relative bg-[#1D300E] text-white pt-16 md:pt-24 pb-12 overflow-hidden border-t border-[#294A0D]">
+    <footer className="relative bg-[#1d2908] text-white pt-16 md:pt-24 pb-12 overflow-hidden border-t border-[#3c5310]">
       {/* Background Ambient Glows & Watermark Leaf */}
       <div
-        className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full bg-[#8DBB18]/08 blur-[120px] pointer-events-none"
+        className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full bg-[#84dc00]/08 blur-[120px] pointer-events-none"
         aria-hidden="true"
       />
       <div
-        className="absolute top-12 left-1/4 w-[350px] h-[350px] rounded-full bg-[#5E8F0B]/06 blur-[100px] pointer-events-none"
+        className="absolute top-12 left-1/4 w-[350px] h-[350px] rounded-full bg-[#527316]/06 blur-[100px] pointer-events-none"
         aria-hidden="true"
       />
       <div
@@ -57,7 +57,7 @@ export function AgroFooter() {
 
       <AgroContainer>
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-[#294A0D]/80 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-[#3c5310]/80 relative z-10">
           {/* Col 1: Brand & Statement (4 cols) */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <AgroLogo variant="light" size="lg" withTagline={true} />
@@ -69,11 +69,11 @@ export function AgroFooter() {
 
             {/* Badges of trust */}
             <div className="flex flex-wrap gap-2 pt-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-montserrat font-medium bg-[#294A0D] text-[#8DBB18] border border-[#8DBB18]/30">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-montserrat font-medium bg-[#3c5310] text-[#84dc00] border border-[#84dc00]/30">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 Qualidade Certificada
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-montserrat font-medium bg-[#294A0D] text-[#8DBB18] border border-[#8DBB18]/30">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-montserrat font-medium bg-[#3c5310] text-[#84dc00] border border-[#84dc00]/30">
                 <Leaf className="w-3.5 h-3.5" />
                 Sustentabilidade
               </span>
@@ -82,7 +82,7 @@ export function AgroFooter() {
 
           {/* Col 2: Products Links (3 cols) */}
           <div className="lg:col-span-3 flex flex-col gap-4">
-            <h4 className="text-xs font-montserrat font-bold tracking-widest text-[#8DBB18] uppercase">
+            <h4 className="text-xs font-montserrat font-bold tracking-widest text-[#84dc00] uppercase">
               Soluções & Produtos
             </h4>
             <ul className="flex flex-col gap-2.5">
@@ -90,9 +90,9 @@ export function AgroFooter() {
                 <li key={idx}>
                   <a
                     href={item.href}
-                    className="text-xs sm:text-sm text-white/75 hover:text-[#8DBB18] transition-colors flex items-center gap-1.5 group"
+                    className="text-xs sm:text-sm text-white/75 hover:text-[#84dc00] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#5E8F0B] opacity-60 group-hover:scale-150 group-hover:bg-[#8DBB18] transition-all" />
+                    <span className="w-1 h-1 rounded-full bg-[#527316] opacity-60 group-hover:scale-150 group-hover:bg-[#84dc00] transition-all" />
                     <span>{item.label}</span>
                   </a>
                 </li>
@@ -102,7 +102,7 @@ export function AgroFooter() {
 
           {/* Col 3: Quick Navigation (2 cols) */}
           <div className="lg:col-span-2 flex flex-col gap-4">
-            <h4 className="text-xs font-montserrat font-bold tracking-widest text-[#8DBB18] uppercase">
+            <h4 className="text-xs font-montserrat font-bold tracking-widest text-[#84dc00] uppercase">
               Institucional
             </h4>
             <ul className="flex flex-col gap-2.5">
@@ -110,9 +110,9 @@ export function AgroFooter() {
                 <li key={idx}>
                   <a
                     href={item.href}
-                    className="text-xs sm:text-sm text-white/75 hover:text-[#8DBB18] transition-colors flex items-center gap-1.5 group"
+                    className="text-xs sm:text-sm text-white/75 hover:text-[#84dc00] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#5E8F0B] opacity-60 group-hover:scale-150 group-hover:bg-[#8DBB18] transition-all" />
+                    <span className="w-1 h-1 rounded-full bg-[#527316] opacity-60 group-hover:scale-150 group-hover:bg-[#84dc00] transition-all" />
                     <span>{item.label}</span>
                   </a>
                 </li>
@@ -122,28 +122,28 @@ export function AgroFooter() {
 
           {/* Col 4: Contact and Support (3 cols) */}
           <div className="lg:col-span-3 flex flex-col gap-4">
-            <h4 className="text-xs font-montserrat font-bold tracking-widest text-[#8DBB18] uppercase">
+            <h4 className="text-xs font-montserrat font-bold tracking-widest text-[#84dc00] uppercase">
               Atendimento & Suporte
             </h4>
             <div className="flex flex-col gap-3 text-xs sm:text-sm text-white/80">
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-[#8DBB18] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#84dc00] shrink-0 mt-0.5" />
                 <span>Atendimento Nacional com consultores nos principais polos agrícolas do Brasil.</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-[#8DBB18] shrink-0" />
+                <Mail className="w-4 h-4 text-[#84dc00] shrink-0" />
                 <a
                   href="mailto:contato@agroforte.com.br"
-                  className="hover:text-[#8DBB18] transition-colors"
+                  className="hover:text-[#84dc00] transition-colors"
                 >
                   contato@agroforte.com.br
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-[#8DBB18] shrink-0" />
+                <Phone className="w-4 h-4 text-[#84dc00] shrink-0" />
                 <a
                   href="tel:+5508000000000"
-                  className="hover:text-[#8DBB18] transition-colors"
+                  className="hover:text-[#84dc00] transition-colors"
                 >
                   0800 000 0000 / WhatsApp Comercial
                 </a>
@@ -160,7 +160,7 @@ export function AgroFooter() {
                   e.preventDefault();
                   alert("Obrigado por se inscrever no informativo técnico Agroforte!");
                 }}
-                className="flex items-center rounded-full bg-black/30 border border-[#294A0D] p-1 focus-within:border-[#8DBB18] transition-colors"
+                className="flex items-center rounded-full bg-black/30 border border-[#3c5310] p-1 focus-within:border-[#84dc00] transition-colors"
               >
                 <input
                   id="footer-newsletter"
@@ -171,7 +171,7 @@ export function AgroFooter() {
                 />
                 <button
                   type="submit"
-                  className="p-2 rounded-full bg-[#5E8F0B] hover:bg-[#8DBB18] text-white transition-colors cursor-pointer"
+                  className="p-2 rounded-full bg-[#527316] hover:bg-[#84dc00] text-white transition-colors cursor-pointer"
                   aria-label="Inscrever no informativo"
                 >
                   <Send className="w-3.5 h-3.5" />
@@ -191,7 +191,7 @@ export function AgroFooter() {
           </div>
 
           <div className="flex items-center gap-6">
-            <span className="text-[11px] uppercase tracking-widest text-[#8DBB18]/80 font-mono">
+            <span className="text-[11px] uppercase tracking-widest text-[#84dc00]/80 font-mono">
               Agronegócio de Alta Tecnologia
             </span>
           </div>

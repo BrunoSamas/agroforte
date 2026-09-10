@@ -23,7 +23,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col bg-[#F9F8F4] selection:bg-[#8DBB18]/30 selection:text-[#1D300E]">
+    <main className="min-h-screen flex flex-col bg-[#F9F8F4] selection:bg-[#84dc00]/30 selection:text-[#1d2908]">
       {/* Dynamic Header */}
       <AgroHeader onOpenContact={() => handleOpenContact(null)} />
 

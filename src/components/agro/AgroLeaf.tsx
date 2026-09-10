@@ -61,31 +61,31 @@ export function AgroLeaf({
             y2="90%"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0%" stopColor="#8DBB18">
+            <stop offset="0%" stopColor="#84dc00">
               {animated && (
                 <animate
                   attributeName="stop-color"
-                  values="#8DBB18; #5E8F0B; #294A0D; #8DBB18"
+                  values="#84dc00; #527316; #3c5310; #84dc00"
                   dur="5s"
                   repeatCount="indefinite"
                 />
               )}
             </stop>
-            <stop offset="50%" stopColor="#5E8F0B">
+            <stop offset="50%" stopColor="#527316">
               {animated && (
                 <animate
                   attributeName="stop-color"
-                  values="#5E8F0B; #294A0D; #8DBB18; #5E8F0B"
+                  values="#527316; #3c5310; #84dc00; #527316"
                   dur="5s"
                   repeatCount="indefinite"
                 />
               )}
             </stop>
-            <stop offset="100%" stopColor="#294A0D">
+            <stop offset="100%" stopColor="#3c5310">
               {animated && (
                 <animate
                   attributeName="stop-color"
-                  values="#294A0D; #8DBB18; #5E8F0B; #294A0D"
+                  values="#3c5310; #84dc00; #527316; #3c5310"
                   dur="5s"
                   repeatCount="indefinite"
                 />
@@ -101,9 +101,9 @@ export function AgroLeaf({
             x2="100%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#8DBB18" stopOpacity="0.9" />
+            <stop offset="0%" stopColor="#84dc00" stopOpacity="0.9" />
             <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#5E8F0B" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="#527316" stopOpacity="0.4" />
           </linearGradient>
         </defs>
 
@@ -175,8 +175,8 @@ export function AgroLeaf({
         />
 
         {/* Bio-Tech Energy Node Dots */}
-        <circle cx="50" cy="14" r="2.2" fill="#8DBB18" />
-        <circle cx="64" cy="82" r="2" fill="#5E8F0B" />
+        <circle cx="50" cy="14" r="2.2" fill="#84dc00" />
+        <circle cx="64" cy="82" r="2" fill="#527316" />
       </svg>
     </div>
   );

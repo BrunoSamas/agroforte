@@ -34,10 +34,10 @@ export function CategoryFilter({
               aria-selected={isActive}
               onClick={() => onSelectCategory(cat.id)}
               className={cn(
-                "relative px-4 sm:px-5 py-2.5 rounded-full font-montserrat font-bold text-xs uppercase tracking-wider transition-all duration-300 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8DBB18]",
+                "relative px-4 sm:px-5 py-2.5 rounded-full font-montserrat font-bold text-xs uppercase tracking-wider transition-all duration-300 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#84dc00]",
                 isActive
-                  ? "bg-[#5E8F0B] text-white shadow-[0_4px_16px_rgba(94,143,11,0.3)] border border-[#8DBB18]"
-                  : "bg-white text-[#555A50] hover:text-[#1D300E] hover:bg-[#F9F8F4] border border-[#E5E5DC] shadow-sm"
+                  ? "bg-[#527316] text-white shadow-[0_4px_16px_rgba(94,143,11,0.3)] border border-[#84dc00]"
+                  : "bg-white text-[#555A50] hover:text-[#1d2908] hover:bg-[#F9F8F4] border border-[#E5E5DC] shadow-sm"
               )}
             >
               <div className="flex items-center gap-2">
@@ -48,7 +48,7 @@ export function CategoryFilter({
                       "text-[10px] px-1.5 py-0.2 rounded-full font-mono font-semibold transition-colors",
                       isActive
                         ? "bg-white/20 text-white"
-                        : "bg-[#1D300E]/08 text-[#555A50]"
+                        : "bg-[#1d2908]/08 text-[#555A50]"
                     )}
                   >
                     {count}

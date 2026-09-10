@@ -58,7 +58,7 @@ export function ProductsSection({ onConsultProduct }: ProductsSectionProps) {
   return (
     <section
       id="produtos"
-      className="relative py-20 lg:py-28 bg-[#F9F8F4] text-[#1D300E] scroll-mt-20 overflow-hidden"
+      className="relative py-20 lg:py-28 bg-[#F9F8F4] text-[#1d2908] scroll-mt-20 overflow-hidden"
     >
       {/* Background Natural Radial Glow */}
       <div className="absolute inset-0 bg-agro-natural-radial pointer-events-none" />
@@ -67,13 +67,13 @@ export function ProductsSection({ onConsultProduct }: ProductsSectionProps) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#E5E5DC]">
           <div className="flex flex-col gap-3 max-w-2xl">
-            <div className="inline-flex items-center gap-2 text-xs font-montserrat font-extrabold tracking-[0.2em] text-[#5E8F0B] uppercase">
-              <Sparkles className="w-4 h-4 text-[#8DBB18]" />
+            <div className="inline-flex items-center gap-2 text-xs font-montserrat font-extrabold tracking-[0.2em] text-[#527316] uppercase">
+              <Sparkles className="w-4 h-4 text-[#84dc00]" />
               <span>NOSSAS SOLUÇÕES</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-black text-[#1D300E] uppercase tracking-tight">
-              PRODUTOS <span className="text-[#5E8F0B]">AGROFORTE</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-black text-[#1d2908] uppercase tracking-tight">
+              PRODUTOS <span className="text-[#527316]">AGROFORTE</span>
             </h2>
 
             <p className="text-sm sm:text-base text-[#555A50] leading-relaxed">
@@ -90,13 +90,13 @@ export function ProductsSection({ onConsultProduct }: ProductsSectionProps) {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Buscar produtos ou ativos..."
-                className="w-full pl-10 pr-4 py-2.5 rounded-full text-xs bg-white border border-[#E5E5DC] focus:outline-none focus:ring-2 focus:ring-[#8DBB18] focus:border-[#8DBB18] transition-all shadow-sm"
+                className="w-full pl-10 pr-4 py-2.5 rounded-full text-xs bg-white border border-[#E5E5DC] focus:outline-none focus:ring-2 focus:ring-[#84dc00] focus:border-[#84dc00] transition-all shadow-sm"
               />
               {searchQuery && (
                 <button
                   type="button"
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 text-xs text-[#555A50] hover:text-[#1D300E]"
+                  className="absolute right-3 text-xs text-[#555A50] hover:text-[#1d2908]"
                 >
                   &times;
                 </button>

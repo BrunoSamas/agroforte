@@ -24,7 +24,7 @@ export function AgroButton({
   ...props
 }: AgroButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-montserrat font-bold tracking-wider uppercase transition-all duration-300 rounded-full select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8DBB18] focus-visible:ring-offset-2 active:scale-[0.98]";
+    "inline-flex items-center justify-center font-montserrat font-bold tracking-wider uppercase transition-all duration-300 rounded-full select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#84dc00] focus-visible:ring-offset-2 active:scale-[0.98]";
 
   const sizeStyles = {
     sm: "text-xs px-5 py-2.5 gap-2",
@@ -34,15 +34,15 @@ export function AgroButton({
 
   const variantStyles = {
     primary:
-      "bg-gradient-to-r from-[#8DBB18] via-[#5E8F0B] to-[#294A0D] text-white shadow-md hover:shadow-[0_8px_24px_rgba(94,143,11,0.35)] hover:brightness-105 border border-white/20",
+      "bg-gradient-to-r from-[#84dc00] via-[#527316] to-[#3c5310] text-white shadow-md hover:shadow-[0_8px_24px_rgba(94,143,11,0.35)] hover:brightness-105 border border-white/20",
     secondary:
-      "bg-[#1D300E] text-[#F9F8F4] hover:bg-[#294A0D] border border-[#294A0D] shadow-sm hover:shadow-md",
+      "bg-[#1d2908] text-[#F9F8F4] hover:bg-[#3c5310] border border-[#3c5310] shadow-sm hover:shadow-md",
     outline:
-      "bg-transparent text-[#1D300E] border-2 border-[#1D300E]/20 hover:border-[#5E8F0B] hover:text-[#5E8F0B] hover:bg-[#5E8F0B]/05",
+      "bg-transparent text-[#1d2908] border-2 border-[#1d2908]/20 hover:border-[#527316] hover:text-[#527316] hover:bg-[#527316]/05",
     "outline-light":
-      "bg-transparent text-white border-2 border-white/30 hover:border-[#8DBB18] hover:text-[#8DBB18] hover:bg-white/05",
+      "bg-transparent text-white border-2 border-white/30 hover:border-[#84dc00] hover:text-[#84dc00] hover:bg-white/05",
     ghost:
-      "bg-transparent text-[#1D300E] hover:bg-[#5E8F0B]/10 hover:text-[#5E8F0B]",
+      "bg-transparent text-[#1d2908] hover:bg-[#527316]/10 hover:text-[#527316]",
     tech:
       "bg-[#403568] text-white hover:bg-[#403568]/90 shadow-md hover:shadow-[0_8px_24px_rgba(64,53,104,0.35)] border border-white/15",
   };

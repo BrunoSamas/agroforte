@@ -61,14 +61,14 @@ export function ProductDetailModal({
         {/* Top Accent Strip */}
         <div
           className="h-1.5 w-full"
-          style={{ backgroundColor: product.accentColor || "#5E8F0B" }}
+          style={{ backgroundColor: product.accentColor || "#527316" }}
         />
 
         {/* Close Button */}
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-white/90 hover:bg-white text-[#1D300E] shadow-md border border-[#E5E5DC] transition-transform hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#8DBB18]"
+          className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-white/90 hover:bg-white text-[#1d2908] shadow-md border border-[#E5E5DC] transition-transform hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#84dc00]"
           aria-label="Fechar modal"
         >
           <X className="w-5 h-5" />
@@ -76,7 +76,7 @@ export function ProductDetailModal({
 
         <div className="grid grid-cols-1 md:grid-cols-2 max-h-[85vh] overflow-y-auto">
           {/* Image & Header Side */}
-          <div className="relative min-h-[260px] md:min-h-[420px] bg-[#1D300E]/05">
+          <div className="relative min-h-[260px] md:min-h-[420px] bg-[#1d2908]/05">
             <Image
               src={product.image}
               alt={product.name}
@@ -90,7 +90,7 @@ export function ProductDetailModal({
               <AgroBadge
                 variant="dark"
                 size="sm"
-                className="mb-2 backdrop-blur-md bg-[#1D300E]/80 border-[#8DBB18]/40"
+                className="mb-2 backdrop-blur-md bg-[#1d2908]/80 border-[#84dc00]/40"
               >
                 {product.categoryLabel}
               </AgroBadge>
@@ -107,7 +107,7 @@ export function ProductDetailModal({
           <div className="p-6 sm:p-8 flex flex-col justify-between gap-6">
             <div className="flex flex-col gap-5">
               <div>
-                <span className="text-[11px] font-montserrat font-bold tracking-widest text-[#5E8F0B] uppercase">
+                <span className="text-[11px] font-montserrat font-bold tracking-widest text-[#527316] uppercase">
                   Visão Técnica Geral
                 </span>
                 <p className="mt-1 text-xs sm:text-sm text-[#555A50] leading-relaxed">
@@ -119,9 +119,9 @@ export function ProductDetailModal({
               <div className="flex flex-col gap-3 p-4 rounded-xl bg-[#F9F8F4] border border-[#E5E5DC] text-xs">
                 {product.composition && (
                   <div className="flex items-start gap-2.5">
-                    <FlaskConical className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                    <FlaskConical className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-montserrat font-bold text-[#1D300E] block">
+                      <span className="font-montserrat font-bold text-[#1d2908] block">
                         Composição:
                       </span>
                       <span className="text-[#555A50]">{product.composition}</span>
@@ -131,9 +131,9 @@ export function ProductDetailModal({
 
                 {product.dosage && (
                   <div className="flex items-start gap-2.5">
-                    <Compass className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                    <Compass className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-montserrat font-bold text-[#1D300E] block">
+                      <span className="font-montserrat font-bold text-[#1d2908] block">
                         Recomendação de Dose:
                       </span>
                       <span className="text-[#555A50]">{product.dosage}</span>
@@ -143,9 +143,9 @@ export function ProductDetailModal({
 
                 {product.application && (
                   <div className="flex items-start gap-2.5">
-                    <Layers className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                    <Layers className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-montserrat font-bold text-[#1D300E] block">
+                      <span className="font-montserrat font-bold text-[#1d2908] block">
                         Modo de Aplicação:
                       </span>
                       <span className="text-[#555A50]">{product.application}</span>
@@ -156,7 +156,7 @@ export function ProductDetailModal({
 
               {/* Features List */}
               <div className="flex flex-col gap-2">
-                <span className="text-xs font-montserrat font-bold text-[#1D300E] uppercase tracking-wider">
+                <span className="text-xs font-montserrat font-bold text-[#1d2908] uppercase tracking-wider">
                   Benefícios Agronômicos Comprovados:
                 </span>
                 <ul className="flex flex-col gap-2">
@@ -165,7 +165,7 @@ export function ProductDetailModal({
                       key={idx}
                       className="flex items-start gap-2 text-xs text-[#555A50]"
                     >
-                      <CheckCircle2 className="w-4 h-4 text-[#5E8F0B] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#527316] shrink-0 mt-0.5" />
                       <span>{feat}</span>
                     </li>
                   ))}

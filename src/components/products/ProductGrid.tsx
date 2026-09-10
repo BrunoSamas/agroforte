@@ -14,11 +14,11 @@ export function ProductGrid({ products, onSelectProduct }: ProductGridProps) {
   if (products.length === 0) {
     return (
       <div className="w-full py-16 px-4 text-center flex flex-col items-center justify-center gap-4 bg-white rounded-[20px] border border-[#E5E5DC]">
-        <div className="p-4 rounded-full bg-[#F9F8F4] text-[#5E8F0B]">
+        <div className="p-4 rounded-full bg-[#F9F8F4] text-[#527316]">
           <Leaf className="w-8 h-8" />
         </div>
         <div className="flex flex-col gap-1 max-w-md">
-          <h4 className="text-lg font-montserrat font-bold text-[#1D300E]">
+          <h4 className="text-lg font-montserrat font-bold text-[#1d2908]">
             Nenhuma solução encontrada nesta categoria
           </h4>
           <p className="text-sm text-[#555A50]">

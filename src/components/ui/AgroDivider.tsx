@@ -17,7 +17,7 @@ export function AgroDivider({
 }: AgroDividerProps) {
   const lineClass =
     variant === "dark"
-      ? "from-transparent via-[#294A0D] to-transparent"
+      ? "from-transparent via-[#3c5310] to-transparent"
       : "from-transparent via-[#E5E5DC] to-transparent";
 
   return (

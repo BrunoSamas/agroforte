@@ -23,13 +23,13 @@ export function AgroCard({
     elevated:
       "bg-white border border-[#E5E5DC] shadow-[0_12px_32px_rgba(29,48,14,0.1)]",
     dark:
-      "bg-[#1D300E] border border-[#294A0D] text-white shadow-[0_12px_32px_rgba(0,0,0,0.3)]",
+      "bg-[#1d2908] border border-[#3c5310] text-white shadow-[0_12px_32px_rgba(0,0,0,0.3)]",
     glass:
       "bg-white/80 backdrop-blur-md border border-[#E5E5DC]/80 shadow-[0_8px_24px_rgba(29,48,14,0.06)]",
   };
 
   const hoverStyles = hoverEffect
-    ? "hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(29,48,14,0.14)] hover:border-[#5E8F0B]/40"
+    ? "hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(29,48,14,0.14)] hover:border-[#527316]/40"
     : "";
 
   return (

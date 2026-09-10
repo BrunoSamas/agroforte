@@ -26,17 +26,17 @@ export function DifferentialsSection() {
   return (
     <section
       id="diferenciais"
-      className="relative py-20 lg:py-28 bg-[#1D300E] text-white overflow-hidden scroll-mt-20 border-t border-[#294A0D]"
+      className="relative py-20 lg:py-28 bg-[#1d2908] text-white overflow-hidden scroll-mt-20 border-t border-[#3c5310]"
     >
       {/* Subtle Background Glows */}
-      <div className="absolute -top-40 right-10 w-[600px] h-[600px] rounded-full bg-[#8DBB18]/10 blur-[140px] pointer-events-none" />
-      <div className="absolute -bottom-40 left-10 w-[500px] h-[500px] rounded-full bg-[#5E8F0B]/12 blur-[120px] pointer-events-none" />
+      <div className="absolute -top-40 right-10 w-[600px] h-[600px] rounded-full bg-[#84dc00]/10 blur-[140px] pointer-events-none" />
+      <div className="absolute -bottom-40 left-10 w-[500px] h-[500px] rounded-full bg-[#527316]/12 blur-[120px] pointer-events-none" />
 
       {/* Discrete Connecting Lines Grid */}
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(#8DBB18 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(#84dc00 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
@@ -44,14 +44,14 @@ export function DifferentialsSection() {
       <AgroContainer className="relative z-10">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-3 pb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#294A0D] border border-[#8DBB18]/30 text-xs font-montserrat font-bold tracking-[0.2em] text-[#8DBB18] uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#3c5310] border border-[#84dc00]/30 text-xs font-montserrat font-bold tracking-[0.2em] text-[#84dc00] uppercase">
             <AgroLeaf size={16} animated={false} glow={false} />
             <span>EXCELÊNCIA AGRONÔMICA</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-black uppercase tracking-tight text-white">
             POR QUE ESCOLHER A{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8DBB18] to-[#5E8F0B]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#84dc00] to-[#527316]">
               AGROFORTE
             </span>
           </h2>
@@ -64,25 +64,25 @@ export function DifferentialsSection() {
         {/* Dynamic Connected Process Layout */}
         <div className="relative">
           {/* Subtle Horizontal Connecting Tech Rail (Desktop Only) */}
-          <div className="hidden lg:block absolute top-1/2 left-8 right-8 h-0.5 bg-gradient-to-r from-[#8DBB18]/20 via-[#5E8F0B]/60 to-[#8DBB18]/20 -translate-y-8 z-0 pointer-events-none" />
+          <div className="hidden lg:block absolute top-1/2 left-8 right-8 h-0.5 bg-gradient-to-r from-[#84dc00]/20 via-[#527316]/60 to-[#84dc00]/20 -translate-y-8 z-0 pointer-events-none" />
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {BENEFITS.map((benefit, index) => (
               <div
                 key={benefit.id}
-                className="group relative flex flex-col justify-between p-6 sm:p-7 rounded-[20px] bg-[#294A0D]/50 backdrop-blur-md border border-[#294A0D] hover:border-[#8DBB18]/60 transition-all duration-400 hover:-translate-y-2 shadow-[0_12px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(141,187,24,0.15)] overflow-hidden"
+                className="group relative flex flex-col justify-between p-6 sm:p-7 rounded-[20px] bg-[#3c5310]/50 backdrop-blur-md border border-[#3c5310] hover:border-[#84dc00]/60 transition-all duration-400 hover:-translate-y-2 shadow-[0_12px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(141,187,24,0.15)] overflow-hidden"
               >
                 {/* Background Subtle Gradient Reveal on Hover */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#8DBB18]/08 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#84dc00]/08 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
                 {/* Top Number & Outline Icon */}
                 <div className="flex items-center justify-between gap-4 pb-6">
-                  <span className="font-montserrat font-black text-2xl sm:text-3xl text-white/20 group-hover:text-[#8DBB18] transition-colors">
+                  <span className="font-montserrat font-black text-2xl sm:text-3xl text-white/20 group-hover:text-[#84dc00] transition-colors">
                     {benefit.number}
                   </span>
 
-                  <div className="p-3 rounded-2xl bg-[#1D300E] border border-[#8DBB18]/30 text-[#8DBB18] group-hover:bg-[#8DBB18] group-hover:text-[#1D300E] transition-all duration-300 shadow-sm">
+                  <div className="p-3 rounded-2xl bg-[#1d2908] border border-[#84dc00]/30 text-[#84dc00] group-hover:bg-[#84dc00] group-hover:text-[#1d2908] transition-all duration-300 shadow-sm">
                     {getIcon(benefit.iconName)}
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export function DifferentialsSection() {
                   <h3 className="text-xl font-montserrat font-extrabold text-white tracking-wide">
                     {benefit.title}
                   </h3>
-                  <span className="text-xs font-montserrat font-semibold text-[#8DBB18] uppercase tracking-wider">
+                  <span className="text-xs font-montserrat font-semibold text-[#84dc00] uppercase tracking-wider">
                     {benefit.tagline}
                   </span>
                   <p className="mt-2 text-xs sm:text-sm text-white/75 leading-relaxed font-sans">
@@ -103,7 +103,7 @@ export function DifferentialsSection() {
                 {/* Bottom Active Energy Indicator Line */}
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-white/50 group-hover:text-white/80 transition-colors">
                   <span className="font-mono uppercase tracking-wider">Agroforte Tech</span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#8DBB18]" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#84dc00]" />
                 </div>
               </div>
             ))}

@@ -32,16 +32,16 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
 
   return (
     <article
-      className="group relative flex flex-col h-full bg-white rounded-[16px] border border-[#E5E5DC] transition-all duration-400 ease-out shadow-[0_8px_24px_rgba(29,48,14,0.06)] hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(29,48,14,0.14)] hover:border-[#5E8F0B]/40 overflow-hidden"
+      className="group relative flex flex-col h-full bg-white rounded-[16px] border border-[#E5E5DC] transition-all duration-400 ease-out shadow-[0_8px_24px_rgba(29,48,14,0.06)] hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(29,48,14,0.14)] hover:border-[#527316]/40 overflow-hidden"
     >
       {/* Top Accent Line with Category Color */}
       <div
         className="h-1 w-full shrink-0 transition-opacity duration-300"
-        style={{ backgroundColor: product.accentColor || "#5E8F0B" }}
+        style={{ backgroundColor: product.accentColor || "#527316" }}
       />
 
       {/* Large Visual Image Area (High percentage of card height) */}
-      <div className="relative w-full aspect-[4/3] bg-[#1D300E]/05 overflow-hidden shrink-0">
+      <div className="relative w-full aspect-[4/3] bg-[#1d2908]/05 overflow-hidden shrink-0">
         <Image
           src={product.image}
           alt={product.name}
@@ -65,7 +65,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
           </AgroBadge>
 
           {product.badge && (
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-montserrat font-bold uppercase tracking-wider bg-[#1D300E]/85 text-[#8DBB18] backdrop-blur-md border border-[#8DBB18]/30 shadow-sm">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-montserrat font-bold uppercase tracking-wider bg-[#1d2908]/85 text-[#84dc00] backdrop-blur-md border border-[#84dc00]/30 shadow-sm">
               {product.badge}
             </span>
           )}
@@ -79,7 +79,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
           <span className="text-[11px] font-montserrat font-semibold tracking-widest text-[#555A50] uppercase">
             {product.categoryLabel}
           </span>
-          <h3 className="text-lg sm:text-xl font-montserrat font-extrabold text-[#1D300E] leading-snug group-hover:text-[#5E8F0B] transition-colors">
+          <h3 className="text-lg sm:text-xl font-montserrat font-extrabold text-[#1d2908] leading-snug group-hover:text-[#527316] transition-colors">
             {product.name}
           </h3>
           <p className="text-xs sm:text-sm text-[#555A50] leading-relaxed line-clamp-2">
@@ -92,7 +92,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
 
         {/* Key Features List */}
         <div className="flex flex-col gap-2">
-          <span className="text-[10px] font-montserrat font-bold tracking-wider uppercase text-[#1D300E]/70">
+          <span className="text-[10px] font-montserrat font-bold tracking-wider uppercase text-[#1d2908]/70">
             Destaques Técnicos:
           </span>
           <ul className="flex flex-col gap-1.5">
@@ -103,7 +103,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
               >
                 <Check
                   className="w-3.5 h-3.5 shrink-0 mt-0.5"
-                  style={{ color: product.accentColor || "#5E8F0B" }}
+                  style={{ color: product.accentColor || "#527316" }}
                 />
                 <span className="line-clamp-1">{feat}</span>
               </li>
@@ -116,7 +116,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
           <button
             type="button"
             onClick={() => onSelect(product)}
-            className="w-full py-3 px-4 rounded-full font-montserrat font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-[#E5E5DC] text-[#1D300E] bg-[#F9F8F4] group-hover:bg-[#5E8F0B] group-hover:text-white group-hover:border-[#5E8F0B] transition-all duration-300 shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#8DBB18]"
+            className="w-full py-3 px-4 rounded-full font-montserrat font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-[#E5E5DC] text-[#1d2908] bg-[#F9F8F4] group-hover:bg-[#527316] group-hover:text-white group-hover:border-[#527316] transition-all duration-300 shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#84dc00]"
           >
             <span>Ver Especificações</span>
             <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />

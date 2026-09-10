@@ -18,12 +18,12 @@ export default function ProdutosPage() {
     <div className="min-h-screen flex flex-col bg-[#F9F8F4]">
       <AgroHeader />
 
-      <div className="pt-28 pb-6 bg-[#1D300E] text-white">
+      <div className="pt-28 pb-6 bg-[#1d2908] text-white">
         <AgroContainer>
           <div className="flex flex-col gap-3 py-6">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-xs font-montserrat font-semibold text-[#8DBB18] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-montserrat font-semibold text-[#84dc00] hover:underline"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Voltar para a Página Inicial</span>

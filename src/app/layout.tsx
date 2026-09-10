@@ -55,7 +55,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${montserrat.variable} ${inter.variable} scroll-smooth antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-[#F9F8F4] text-[#1D300E] font-sans selection:bg-[#8DBB18]/30 selection:text-[#1D300E]">
+      <body className="min-h-screen flex flex-col bg-[#F9F8F4] text-[#1d2908] font-sans selection:bg-[#84dc00]/30 selection:text-[#1d2908]">
         {children}
       </body>
     </html>
